@@ -1,0 +1,14 @@
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\bin\Debug\netcoreapp2.2\API.PROTESTO.deps.json
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\bin\Debug\netcoreapp2.2\API.PROTESTO.runtimeconfig.json
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\bin\Debug\netcoreapp2.2\API.PROTESTO.runtimeconfig.dev.json
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\bin\Debug\netcoreapp2.2\API.PROTESTO.dll
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\bin\Debug\netcoreapp2.2\API.PROTESTO.pdb
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.csproj.CoreCompileInputs.cache
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.RazorAssemblyInfo.cache
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.RazorAssemblyInfo.cs
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.AssemblyInfoInputs.cache
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.AssemblyInfo.cs
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.RazorTargetAssemblyInfo.cache
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.dll
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.pdb
+C:\Users\gemva\source\repos\API.PROTESTO\API.PROTESTO\obj\Debug\netcoreapp2.2\API.PROTESTO.csprojAssemblyReference.cache

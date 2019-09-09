@@ -1,0 +1,58 @@
+<h1>Visualizar Protesto</h1>
+
+<table class='table table-striped' *ngIf="forecasts">
+  <thead>
+    <tr>
+      <th>Bairro_Devedor</th>
+      <th>CEP_Devedor</th>
+      <th>CPF_CNPJ_Devedor</th>
+      <th>Cidade_Devedor</th>
+      <th>Cidade_Praca_Pagamento</th>
+      <th>CodigoBanco</th>
+      <th>CodigoInterno</th>
+      <th>DataEmissao</th>
+      <th>DataVencimento</th>
+      <th>Endereco_Devedor</th>
+      <th>NomeCredor</th>
+      <th>NomeDevedor</th>
+      <th>NumeroTitulo</th>
+      <th>Operacao</th>
+      <th>Parcela</th>
+      <th>ProtestoID</th>
+      <th>QtdeParcelaContrato</th>
+      <th>TipoDocumento</th>
+      <th>UF_Devedor</th>
+      <th>UF_Praca_Pagamento</th>
+      <th>Valor1aParcela</th>
+      <th>ValorProtestar</th>
+      <th>ValorTitulo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="protestos">
+      <td>{{ protestos.Bairro_Devedor }}</td>
+      <td>{{ protestos.CEP_Devedor }}</td>
+      <td>{{ protestos.CPF_CNPJ_Devedor }}</td>
+      <td>{{ protestos.Cidade_Devedor }}</td>
+      <td>{{ protestos.Cidade_Praca_Pagamento }}</td>
+      <td>{{ protestos.CodigoBanco }}</td>
+      <td>{{ protestos.CodigoInterno }}</td>
+      <td>{{ protestos.DataEmissao }}</td>
+      <td>{{ protestos.DataVencimento }}</td>
+      <td>{{ protestos.Endereco_Devedor }}</td>
+      <td>{{ protestos.NomeCredor }}</td>
+      <td>{{ protestos.NomeDevedor }}</td>
+      <td>{{ protestos.NumeroTitulo }}</td>
+      <td>{{ protestos.Operacao }}</td>
+      <td>{{ protestos.Parcela }}</td>
+      <td>{{ protestos.ProtestoID }}</td>
+      <td>{{ protestos.QtdeParcelaContrato }}</td>
+      <td>{{ protestos.TipoDocumento }}</td>
+      <td>{{ protestos.UF_Devedor }}</td>
+      <td>{{ protestos.UF_Praca_Pagamento }}</td>
+      <td>{{ protestos.Valor1aParcela }}</td>
+      <td>{{ protestos.ValorProtestar }}</td>
+      <td>{{ protestos.ValorTitulo }}</td>
+    </tr>
+  </tbody>
+</table>
