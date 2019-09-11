@@ -26,6 +26,18 @@ namespace API.PROTESTO
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:60793",
+                                            "http://localhost:59816")
+                                            .AllowAnyHeader()
+                                            .AllowAnyMethod();
+                    });
+            });
+
             services.AddDbContext<ProtestoContext>(
                     options => options.UseSqlServer(
                         Configuration.GetConnectionString("BaseProtestos")));
@@ -40,6 +52,7 @@ namespace API.PROTESTO
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors();
             app.UseMvc();
         }
     }

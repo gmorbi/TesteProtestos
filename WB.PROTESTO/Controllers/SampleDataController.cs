@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,6 +40,18 @@ namespace WB.PROTESTO.Controllers
                     return 32 + (int)(TemperatureC / 0.5556);
                 }
             }
+        }
+
+        [HttpGet]
+        public static HttpResponseMessage VisualizarProtestos()
+        {
+            string endpoint = "http://localhost:60793/api/protesto";
+            HttpClient client = new HttpClient();
+            HttpResponseMessage response = new HttpResponseMessage();
+
+            response = client.GetAsync(new Uri(endpoint)).Result;
+
+            return response;
         }
     }
 }

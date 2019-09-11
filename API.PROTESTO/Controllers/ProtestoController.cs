@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using API.PROTESTO.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Cors;
 
 namespace API.PROTESTO.Controllers
 {
@@ -20,12 +21,14 @@ namespace API.PROTESTO.Controllers
             _context = context;
         }
 
+        [EnableCors]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Protesto>>> GetProtestos()
         {
             return await _context.Protestos.ToListAsync();
         }
 
+        [EnableCors]
         [HttpGet("{id}")]
         public async Task<ActionResult<Protesto>> GetProtesto(int id)
         {
@@ -39,6 +42,7 @@ namespace API.PROTESTO.Controllers
             return protesto;
         }
 
+        [EnableCors]
         [HttpPost]
         public async Task<ActionResult<Protesto>> PostProtesto(Protesto protesto)
         {
@@ -48,6 +52,7 @@ namespace API.PROTESTO.Controllers
             return CreatedAtAction(nameof(GetProtesto), new { id = protesto.ProtestoID }, protesto);
         }
 
+        [EnableCors]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProtesto(int id, Protesto protesto)
         {
@@ -62,6 +67,7 @@ namespace API.PROTESTO.Controllers
             return NoContent();
         }
 
+        [EnableCors]
         [HttpDelete]
         public async Task<ActionResult<Protesto>> DeleteProtesto(int id)
         {
